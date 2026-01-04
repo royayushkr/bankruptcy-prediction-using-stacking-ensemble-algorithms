@@ -1,4 +1,4 @@
-# Bankruptcy Prediction: 1st Place Solution
+# Bankruptcy Prediction Using Stacking Ensemble Algorithms
 [![Kaggle](https://img.shields.io/badge/Kaggle-Leaderboard-20BEFF?logo=kaggle)](https://www.kaggle.com/competitions/fall-2025-mgmt-571-final-project/leaderboard)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![XGBoost](https://img.shields.io/badge/XGBoost-Enabled-green)
