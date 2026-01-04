@@ -85,7 +85,7 @@ pip install catboost
 ```text
 .
 ├── training_pipeline.ipynb    # Main training and inference pipeline
-├── project_slides.pdf  # Executive summary slides
+├── project_slides.pdf         # Executive summary slides
 ├── bankruptcy_Train.csv       # Training data (Not included in repo)
 ├── bankruptcy_Test_X.csv      # Testing data (Not included in repo)
 └── README.md                  # Project documentation
