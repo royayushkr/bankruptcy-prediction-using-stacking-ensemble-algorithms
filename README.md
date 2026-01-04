@@ -1,5 +1,5 @@
 # Bankruptcy Prediction: 1st Place Solution
-
+[![Kaggle](https://img.shields.io/badge/Kaggle-Leaderboard-20BEFF?logo=kaggle)](https://www.kaggle.com/competitions/fall-2025-mgmt-571-final-project/leaderboard)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![XGBoost](https://img.shields.io/badge/XGBoost-Enabled-green)
 ![LightGBM](https://img.shields.io/badge/LightGBM-Enabled-green)
@@ -27,8 +27,8 @@ We recognized that raw financial ratios were insufficient. We generated **16,448
 Training on 16k features is inefficient and prone to overfitting. We used **Recursive Feature Elimination with Cross-Validation (RFECV)** accelerated by an **NVIDIA A100 GPU**.
 * **Scout Model:** A fast XGBoost model ranked features by Information Gain.
 * **Optimization:** We reduced the feature space from 16,448 to an optimal **3,600 features**, retaining 98% of predictive power.
-
-
+  
+<img width="855" height="547" alt="image" src="https://github.com/user-attachments/assets/49284bf4-f972-4794-8e07-cb1f5da97f06" />
 
 ### 3. Dual Imputation Strategy
 Different models handle missing math differently. We used two distinct strategies:
@@ -46,7 +46,7 @@ Our final pipeline consisted of three levels:
 
 
 
-## 📊 Performance Results
+## Performance Results | [**🏆 View Competition Leaderboard**](https://www.kaggle.com/competitions/fall-2025-mgmt-571-final-project/leaderboard)
 
 We benchmarked various architectures during development:
 
@@ -56,6 +56,8 @@ We benchmarked various architectures during development:
 | Single XGBoost | ~0.9100 | High variance. |
 | RFECV Optimized XGB | ~0.9382 | Top 3600 features selected. |
 | **Final Ensemble (Hill Climbing)** | **0.9528** | **Winning Solution**. |
+
+<img width="859" height="470" alt="image" src="https://github.com/user-attachments/assets/78dda6aa-8f79-4a8b-b99f-f17a571d24fc" />
 
 
 
