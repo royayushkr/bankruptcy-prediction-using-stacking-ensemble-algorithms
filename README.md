@@ -65,7 +65,7 @@ We benchmarked various architectures during development:
 
 ### Prerequisites
 * Python 3.8+
-* NVIDIA GPU (Recommended for RFECV and XGBoost training)
+* NVIDIA GPU T4/A100 (Recommended for RFECV and XGBoost training)
 
 ### Libraries
 ```bash
@@ -76,16 +76,16 @@ pip install catboost
 
 ### Running the Solution
 1.  **Data Placement:** Ensure `bankruptcy_Train.csv` and `bankruptcy_Test_X.csv` are in the project root or drive path.
-2.  **Execution:** Run the Jupyter Notebook `3600_12_8_HC_A100.ipynb`.
+2.  **Execution:** Run the Jupyter Notebook `training_pipeline.ipynb`.
     * *Note:* The notebook detects GPU availability automatically.
-3.  **Output:** The script generates `submission2.csv` containing the predicted probabilities.
+3.  **Output:** The script generates `submission.csv` containing the predicted probabilities.
 
 
 ## File Structure
 ```text
 .
-├── 3600_12_8_HC_A100.ipynb    # Main training and inference pipeline
-├── teamSHIV_presentation.pdf  # Executive summary slides
+├── training_pipeline.ipynb    # Main training and inference pipeline
+├── project_slides.pdf  # Executive summary slides
 ├── bankruptcy_Train.csv       # Training data (Not included in repo)
 ├── bankruptcy_Test_X.csv      # Testing data (Not included in repo)
 └── README.md                  # Project documentation
